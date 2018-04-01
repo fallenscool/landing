@@ -27,8 +27,8 @@ gulp.task('scripts', function () {
         'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
     ])
         .pipe(concat('libs.min.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest('app/js'));
+				.pipe(uglify())
+				.pipe(gulp.dest('app/js'));
 
 });
 
