@@ -11,8 +11,8 @@ $headerBG:#f6f2f2;
 $navColor: #313030;
 $hoverLink:#b23031;
 $activeLink:#ff3f40;
-$fontcolor:#6f6d6d;
-$btncolorH:#fa8484;
+$filterlinkH:#fd6964;
+$fontcolor:#737373;
 $btncolor:#ff2d2d;
 
 
@@ -220,4 +220,51 @@ body, html{
 	background: url("../img/svg/offer__line.svg") no-repeat bottom;
 	background-size:auto;
 	min-height: 700px;	
+}
+.section-products{
+	text-align: center;
+	padding-top: 100px;
+	p{
+		max-width: 535px;
+		margin: auto;
+		margin-bottom: 120px;
+		position: relative;
+		&:after{
+			content:" ";
+			background: url("../img/svg/product__pafter.svg") no-repeat center;
+			width: 180px;
+			height: 5px;
+			left: 180px;
+			bottom: -25px;
+			background-size: contain;
+			position: absolute;
+		}
+	}
+}
+.filter{
+	display: inline-block;
+}
+.filter__link{
+	font:22px $font-semibold;
+	text-transform: uppercase;
+	color: $fontcolor;
+	margin: 0 15px 0 45px;
+	letter-spacing: normal;
+	&:hover{
+		color:$filterlinkH;
+	}
+}
+.filter__link.active{
+	color:$activeLink;
+}
+.section-products__products{
+	margin-top: 60px;
+}
+.section-products__item{
+	display: inline-block;
+	margin: 0 5px 10px;
+	max-width: 290px;
+	width: 25%;
+	height: 290px;
+	background: url("../img/product__item.jpg");
 }
