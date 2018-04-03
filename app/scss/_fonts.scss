@@ -48,3 +48,13 @@
 	font-weight: 800;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'Open Sans Italic';
+	src: local('Open Sans Italic'), 
+			 local('OpenSans-Italic'), 
+			 url('../fonts/opensansitalic') format('woff2'), 
+			 url('../fonts/opensansitalic.woff') format('woff'), 
+			 url('../fonts/opensansitalic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}

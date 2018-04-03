@@ -6,6 +6,7 @@ $font-regular:Open Sans,sans-serif;
 $font-semibold:Open Sans Semibold,sans-serif;
 $font-bold:Open Sans Bold,sans-serif;
 $font-extrabold:Open Sans Extrabold,sans-serif;
+$font-regularItalic: Open Sans Italic, sans-serif;
 
 $headerBG:#f6f2f2;
 $navColor: #313030;
@@ -78,6 +79,11 @@ h2{
 	text-transform: uppercase;
 	line-height: 54px;
 	margin-bottom: 40px;
+}
+h3{
+	font: 30px $font-semibold;
+	text-transform: uppercase;
+	margin-bottom: 30px;
 }
 h4{
 	font: 24px $font-semibold;
@@ -267,4 +273,59 @@ body, html{
 	width: 25%;
 	height: 290px;
 	background: url("../img/product__item.jpg");
+}
+.section-team{
+	margin-top: 130px;
+}
+.section-team__info{
+	max-width: 470px;
+	margin-bottom: 100px;
+	p{
+		min-height: 80px;
+		&:after{
+			content:"";
+			background: url("../img/svg/product__pafter.svg") no-repeat center;
+			width: 180px;
+			height: 5px;
+			background-size: contain;
+			position: absolute;
+			margin: 60px 0  0 -40px; 
+		}
+	}
+}
+.person__info{
+	vertical-align: top;
+	min-width:69% ;
+	display: inline-block;
+	p{
+		max-width: 660px;
+		margin-bottom: 45px;
+	}
+}
+.person__big-photo{
+	display: inline-block;
+}
+.person-info__big-photo{
+	max-width: 320px;
+	width: 100%;
+	max-height: 460px;
+	height: 100%;
+	margin-right: 50px;
+}
+.person__info_social{
+	margin-bottom: 50px;
+}
+.person__social{
+	display: inline-block;
+	margin: 0 40px 0 0;
+}
+.social_link{
+	font:18px $font-regularItalic;
+	color: $fontcolor;
+}
+.person__small-photo{
+	display: inline-block;
+	max-width: 200px;
+	width: 25%;
+
 }
