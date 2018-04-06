@@ -30,5 +30,8 @@
     "gulp-uglify": "^3.0.0",
     "imagemin-pngquant": "^5.0.1"
   },
-  "homepage": "https://github.com/fallenscool/landing#readme"
+  "homepage": "https://github.com/fallenscool/landing#readme",
+  "dependencies": {
+    "gulp-install": "^1.1.0"
+  }
 }
